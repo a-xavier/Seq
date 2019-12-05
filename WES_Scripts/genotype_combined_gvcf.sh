@@ -19,4 +19,5 @@ gatk IndexFeatureFile -F FAP_cohort.g.vcf.gz
 gatk --java-options "-Xmx45g" GenotypeGVCFs \
 	-R /home/c3244443/refs/ucsc.hg19.fasta \
 	-V FAP_cohort.g.vcf.gz \
+	--dbsnp /home/c3244443/refs/dbsnp_138.hg19.vcf \
 	-O FAP_cohort_geno.vcf.gz
